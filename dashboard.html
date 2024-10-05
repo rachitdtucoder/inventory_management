@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPORT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <h1>UJLAYAN KISSAN SEVA KENDRA, BARODA</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">DASHBOARD</a></li>
+            <li><a href="inventory.html">INVENTORY</a></li>
+            <li><a href="transaction.html">TRANSACTIONS</a></li>
+        </ul>
+    </nav>
+    <h1 id="profitDate"></h1> <!-- Date above profit -->
+    <div id="dashboard"></div>
+    <h2 class="p"><span id="currentDate"></span></h2> <!-- Added currentDate span -->
+    <div class="dashboard-container">
+        <div id="leftDiv">
+          <p id="todaysProfit">$0.00</p> 
+        </div>
+        <div id="calendar"></div>
+    </div>
+
+    <script src="dashboard.js"></script> <!-- Load dashboard.js first -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        updateProfitDisplay();
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          height: 'auto'
+        });
+        calendar.render();
+      });
+    </script>
+
+</body>
+</html>

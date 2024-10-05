@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>UJLAYAN KISSAN SEVA KENDRA, BARODA</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">DASHBOARD</a></li>
+            <li><a href="inventory.html">INVENTORY</a></li>
+            <li><a href="transaction.html">TRANSACTIONS</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="add-medicine">
+            <h2>Add Medicine</h2>
+            <div class="ji">
+                <input type="text" id="medicineName" placeholder="Medicine Name" required>
+                <input type="number" id="medicineQuantity" placeholder="Quantity" required>
+                <input type="number" id="medicineBuyingPrice" placeholder="Buying Price" required>
+                <button id="addMedicineBtn">Add Medicine</button>
+            </div>
+        </div>
+        <section class="inventory">
+            <h2>Inventory</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>Serial</th>
+                        <th>Medicine</th>
+                        <th>Quantity</th>
+                        <th>Buying Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryTableBody">
+                    <!-- Inventory rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="inventory.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+h1, h2 {
+    color: #333;
+}
+.navbar {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.navbar .logo h1 {
+    margin: 0;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin-left: 20px;
+    padding: 10px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    padding: 10px;
+}
+.nav-links a:hover{
+    background-color: #45a049;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Medicine Section */
+.add-medicine {
+    margin-bottom: 30px;
+}
+
+.add-medicine h2 {
+    margin-bottom: 10px;
+}
+
+.ji {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ji input {
+    width: 24%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ji button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ji button:hover {
+    background-color: #45a049;
+}
+
+/* Inventory Section */
+.inventory {
+    margin-top: 20px;
+}
+
+.inventory h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+table td.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table td.actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+}
+
+table td.actions button:hover {
+    background-color: #45a049;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 15px; */
+}
+
+.form-group input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hajii {
+    display: flex;
+    flex-direction: row; /* Stack buttons vertically */
+    justify-content: space-between; /* Align buttons to the start (left) */
+    margin-top: 10px; /* Space between the button and the form above */
+}
+
+.hajii button {
+    padding: 10px 15px; /* Add some padding for better clickability */
+    margin: 5px 0; /* Space between the buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+#addTransactionBtn{
+    background-color: #4CAF50;
+}
+#addTransactionBtn:hover {
+    background-color: #45a049; 
+}
+#printButton{
+    margin-left: 50%;
+    background-color: #007BFF; /* Bootstrap primary color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: azure;
+    border: none;
+}
+
+#printButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Transactions Section */
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions h2 {
+    margin-bottom: 10px;
+}
+
+#transactionTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#transactionTable th, #transactionTable td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#transactionTable th {
+    background-color: #f4f4f4;
+}
+#searchInput{
+    padding: 8px;
+    border-radius: 4px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    margin-right: 850px;
+    background-color:lightgray;
+}
+/* Dashboard Container Styles */
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6px;
+}
+
+/* Left Div Styles */
+#leftDiv {
+    background-color: #333; /* Dark background for left div */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 30%; /* Increased width for better visibility */
+}
+
+#todaysProfit {
+    font-size: 32px; /* Increased font size for profit display */
+    color: #4CAF50; /* Green color for profit */
+    margin: 10px 0; /* Space around profit text */
+    text-align: center; /* Center align the text */
+}
+
+/* Profit Date Styles */
+#profitDate {
+    color: black;
+    /* margin-bottom: 15px; Space below the date */
+    margin-left: 100px;
+}
+
+/* Calendar Styles */
+#calendar {
+    width: 65%; /* Adjusted width for the calendar */
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Class for additional margin */
+.p {
+    margin-left: 35px; /* Existing margin */
+}
